@@ -295,6 +295,8 @@ require("lazy").setup({
 			})
 		end,
 	},
+	
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 
 	{
 		"windwp/nvim-autopairs",
