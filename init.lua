@@ -46,4 +46,47 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', {
 vim.cmd([[:set shiftwidth=4]])
 vim.cmd([[:set tabstop=4]])
 
+vim.keymap.set("n", "<Esc>", "<cmd>noh<CR>", {
+    desc = "general clear highlights"
+})
+
+vim.keymap.set("n", "<C-h>", "<C-w>h", {
+    desc = "switch window left"
+})
+vim.keymap.set("n", "<C-l>", "<C-w>l", {
+    desc = "switch window right"
+})
+vim.keymap.set("n", "<C-j>", "<C-w>j", {
+    desc = "switch window down"
+})
+vim.keymap.set("n", "<C-k>", "<C-w>k", {
+    desc = "switch window up"
+})
+
+vim.keymap.set("n", "<C-s>", "<cmd>w<CR>", {
+    desc = "file save"
+})
+vim.keymap.set("n", "<C-c>", "<cmd>%y+<CR>", {
+    desc = "file copy whole"
+})
+
+-- Comment
+vim.keymap.set("n", "<leader>/", "gcc", {
+    desc = "comment toggle"
+})
+vim.keymap.set("v", "<leader>/", "gc", {
+    desc = "comment toggle"
+})
+
+-- terminal
+vim.keymap.set("t", "<C-x>", "<C-\\><C-N>", {
+    desc = "terminal escape terminal mode"
+})
+
+-- new terminals
+vim.keymap.set("n", "<leader>t", "<cmd>ToggleTerm<CR>", {
+    desc = "Khali terminal yeil"
+})
+
 require("config.lazy")
+
