@@ -61,7 +61,7 @@ return { -- Autocompletion
                 -- Accept ([y]es) the completion.
                 --  This will auto-import if your LSP supports it.
                 --  This will expand snippets if the LSP sent a snippet.
-                ['<C-y>'] = cmp.mapping.confirm {
+                ['<Tab>'] = cmp.mapping.confirm {
                     select = true
                 },
 
@@ -104,6 +104,8 @@ return { -- Autocompletion
                 name = 'luasnip'
             }, {
                 name = 'path'
+            }, {
+                name = 'buffer'
             }}
         }
     end
