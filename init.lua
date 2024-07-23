@@ -63,7 +63,7 @@ vim.keymap.set("n", "<C-k>", "<C-w>k", {
     desc = "switch window up"
 })
 
-vim.keymap.set("n", "<C-s>", "<cmd>w<CR>", {
+vim.keymap.set({"n", "i"}, "<C-s>", "<cmd>w<CR>", {
     desc = "file save"
 })
 vim.keymap.set("n", "<C-c>", "<cmd>%y+<CR>", {
@@ -84,7 +84,7 @@ vim.keymap.set("t", "<C-x>", "<C-\\><C-N>", {
 })
 
 -- new terminals
-vim.keymap.set("n", "<leader>t", "<cmd>ToggleTerm<CR>", {
+vim.keymap.set("n", "<C-t>", "<cmd>ToggleTerm<CR>", {
     desc = "Khali terminal yeil"
 })
 
