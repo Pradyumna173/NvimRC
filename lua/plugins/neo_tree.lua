@@ -10,6 +10,11 @@ return {
         desc = 'NeoTree reveal'
     }}},
     opts = {
+    	window = { 
+    	    position = "left", -- left, right, top, bottom, float, current
+            width = 1, -- applies to left and right positions
+      	    auto_expand_width = true,
+      	},
         filesystem = {
             window = {
                 mappings = {
